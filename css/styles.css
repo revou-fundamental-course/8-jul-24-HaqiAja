@@ -4,15 +4,18 @@
     text-align: center;
 }
 
+/* mengatur jarak type number dari radio button*/
 .input-distance {
     height: 1.5cm;
 }
 
+/* agar bisa kanan kiri */
 main {
     display: flex;
     justify-content: space-around;
 }
 
+/* mengatur jarak antar kanan kiri */
 .main-content {
     flex: 1;
     padding: 12px;
@@ -29,21 +32,25 @@ form {
     border-radius: 8px;
 }
 
+/* mengatur ukuran button */
 .button {
     height: 40px;
     border-radius: 8px;
 }
 
+/* color submit */
 .submit {
     background-color: aqua;
     border: 12px solid aqua;
 }
 
+/* color reset */
 .reset {
     background-color: white;
     border: 12px solid white;
 }
 
+/* form */
 input[type=number] {
     width: 100%;
     padding: 12px 20px;
@@ -55,10 +62,12 @@ input[type=number] {
     outline: none;
 }
 
+/* form animasi */
 input[type=number]:focus {
     border: 3px solid #555
 }
 
+/* result section right */
 .result-section {
     text-align: center;
     background-color: aliceblue;
@@ -66,11 +75,31 @@ input[type=number]:focus {
     padding: 12px;
 }
 
+/* result submit */
+.result-bmi {
+    font-size: 36px;
+    font-weight: 900;
+    color: blueviolet;
+    background-color: aqua;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 55px;
+    margin-bottom: 25px;
+}
+
+/* result comment */
+.result-comment {
+    color: blue;
+    font-weight: 800;
+}
+
+/* color download */
 .download {
     background-color: aqua;
     border: 12px solid aqua;
 }
 
+/* color konsultasi */
 .konsultasi {
     background-color: aqua;
     border: 12px solid aqua;
