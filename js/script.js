@@ -72,7 +72,7 @@ function getBMIHasil(bmih) {
 // Reset Button 
 function resetForm() {
     document.getElementById('bmi-form').reset();
-    hasilBmiElement.textContent = '0.0';
+    hasilBmiElement.textContent = '00.00';
     kategoriBmiElement.textContent = '';
     dataUserElement.textContent = '';
     jenisKelaminElement.textContent = '';
