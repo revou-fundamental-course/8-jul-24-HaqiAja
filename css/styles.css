@@ -1,106 +1,105 @@
-/* ini css */
-
-.main-title {
-    text-align: center;
+* {
+    font-family: 'Times New Roman', Times, serif;
+    
 }
 
-/* mengatur jarak type number dari radio button*/
-.input-distance {
-    height: 1.5cm;
-}
-
-/* agar bisa kanan kiri */
-main {
-    display: flex;
-    justify-content: space-around;
-}
-
-/* mengatur jarak antar kanan kiri */
-.main-content {
-    flex: 1;
-    padding: 12px;
-}
-
-.input-title {
-    font-size: 14px;
-    font-weight: bold;
-}
-
-form {
+/* Background color keseluruhan */
+html {
     background-color: aliceblue;
-    padding: 12px;
-    border-radius: 8px;
 }
 
-/* mengatur ukuran button */
-.button {
-    height: 40px;
-    border-radius: 8px;
+/* Content utama flex kanan kiri */
+.main-content {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+
 }
 
-/* color submit */
-.submit {
-    background-color: aqua;
-    border: 12px solid aqua;
+.section-kiri {
+    width: 50%;
+    padding: 30px;
 }
 
-/* color reset */
-.reset {
-    background-color: white;
-    border: 12px solid white;
+.section-kanan {
+    width: 50%;
+    padding: 30px;
+}
+/* Content utama flex kanan kiri - END */
+
+ /* Align text artikel menjadi justify */
+p {
+    text-align: justify;
 }
 
-/* form */
+#pembukaan {
+    text-align: justify;
+}
+ /* Align text artikel menjadi justify - END */
+
+/* Form Input, Hasil, Tabel, dan Button Styling */
+.section-form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 input[type=number] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
-    box-sizing: border-box;
-    border: 3px solid #ccc;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
-}
-
-/* form animasi */
-input[type=number]:focus {
-    border: 3px solid #555
-}
-
-/* result section right */
-.result-section {
-    text-align: center;
-    background-color: aliceblue;
-    border-radius: 8px;
-    padding: 12px;
-}
-
-/* result submit */
-.result-bmi {
-    font-size: 36px;
-    font-weight: 900;
-    color: blueviolet;
-    background-color: aqua;
     display: inline-block;
-    padding: 7px 20px;
-    border-radius: 55px;
-    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+button {
+    width: 100%;
+    background-color: gray;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+.form-input {
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 15px;
 }
 
-/* result comment */
-.result-comment {
-    color: blue;
-    font-weight: 800;
+.box-hasil {
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
 }
 
-/* color download */
-.download {
-    background-color: aqua;
-    border: 12px solid aqua;
+.hasil-bmi {
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
 }
 
-/* color konsultasi */
-.konsultasi {
-    background-color: aqua;
-    border: 12px solid aqua;
-}
+
+/* Form Input, Hasil, Tabel, dan Button Styling - END */
+
+
+/* Agar flex menjadi coloumn saat layar (mobile) kurang dari 600px */
+@media (max-width: 600px) {
+    .main-content {
+      flex-direction: column;
+    }
+    .section-kiri {
+        width: 100%;
+        padding: 0;
+    }
+    .section-kanan {
+        width: 100%;
+        padding: 0;
+    }
+  }
+  
+/* Agar flex menjadi coloumn saat layar (mobile) kurang dari 600px  - END*/
