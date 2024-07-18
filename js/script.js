@@ -53,9 +53,9 @@ function hitungBmi(event) {
 }
 
 function getBMIHasil(bmih) {
-    if (bmih < 18.50) return 'kurang dari 18.5';
-    if (bmih >= 18.50 && bmih <= 24.99) return '18.5 dan 24.9';
-    if (bmih >= 25 && bmih <= 29.99) return '25 dan 29.9';
+    if (bmih < 18.50) return 'kurang dari 18.50';
+    if (bmih >= 18.50 && bmih <= 24.99) return '18.5 dan 24.99';
+    if (bmih >= 25 && bmih <= 29.99) return '25 dan 29.99';
     if (bmih > 30) return 'Lebih dari 30';
     return ''
  }
