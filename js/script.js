@@ -38,7 +38,7 @@ function hitungBmi(event) {
     }
 
     let bmi = bbad / (tbad * tbad);
-    bmi = bmi.toFixed(1);
+    bmi = bmi.toFixed(2);
     let bmih = bbad / (tbad * tbad);
     let bmik = bbad / (tbad * tbad);
     let keterangan = getBMIKeterangan(bmik);
